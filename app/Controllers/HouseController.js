@@ -14,6 +14,7 @@ function _drawHouses() {
 export class HouseController {
   constructor() {
     ProxyState.on('houses', _drawHouses)
+    // this function watches to see if the first thing changes. if it does it will fall the function _drawHouses
   }
 
   createHouse() {
